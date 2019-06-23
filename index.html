@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>HUEIC Lucky Number</title>
+  <script src="jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="Logo.png">
+  <script src="index.js"></script>
+  
+</head>
+
+<body>
+  <div id="contaner">
+    <div class='machine'>
+      <a href="http://hueic.edu.vn/">
+        <img src="Logo1.png" alt="picture">
+      </a>
+      <div class='slots' id="slots">
+      </div>
+      
+      <div class="button">
+        <a href='#'	id="play"> Quay Số </a>
+      </div>
+    </div>
+    <div class="num">
+        <div class="image"><img src="Logo.png" alt="picture"><img src="Logo2.png" alt="picture"></div>
+      <div class="leve" id="level">      
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<script>
+  jQuery(document).ready(function(){
+    jQuery(document).on("keydown", disableF5);
+    jQuery("#play").click(function(){
+      run();
+      setTimeout(updateResult, TIME_UPDATE);
+    });
+  });
+</script>

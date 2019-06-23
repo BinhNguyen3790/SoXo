@@ -1,0 +1,140 @@
+.machine {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 60vw;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: blue; }
+
+.slots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40vw;
+  height: 40vw;
+  transform: translate3d(-50%, -50%, 0);
+  perspective: 800vw;
+  overflow: hidden;
+  background-color: #050505;
+  box-shadow: 1vw 1vw 2vw #ff8f8f, -1vw -1vw 2vw #000, -1vw 1vw 2vw #000, 1vw -1vw 2vw #000; }
+  .slots:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 12%, transparent 30%, transparent 70%, rgba(0, 0, 0, 0.8) 90%, black 100%); }
+
+.slot {
+  position: absolute;
+  top: 0vw;
+  width: 30%;
+  height: 20vw;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform-style: preserve-3d;
+  transform-origin: 50% 100%;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: both; }
+  .slot:nth-child(1) {
+    left: 3%;
+    animation-name: rotate-1;
+    animation-duration: 5s; }
+  .slot:nth-child(2) {
+    left: 35%;
+    animation-name: rotate-2;
+    animation-duration: 6s; }
+  .slot:nth-child(3) {
+    left: 67%;
+    animation-name: rotate-2;
+    animation-duration: 5.4s; }
+
+@keyframes rotate-1 {
+  0% {
+    transform: rotateX(144deg); }
+  50% {
+    transform: rotateX(-972deg); }
+  70% {
+    transform: rotateX(-1332deg); }
+  90% {
+    transform: rotateX(-1656deg); }
+  100% {
+    transform: rotateX(-1692deg); } }
+@keyframes rotate-2 {
+  0% {
+    transform: rotateX(0deg); }
+  50% {
+    transform: rotateX(-936deg); }
+  70% {
+    transform: rotateX(-1296deg); }
+  90% {
+    transform: rotateX(-1620deg); }
+  100% {
+    transform: rotateX(-1656deg); } }
+@keyframes rotate-3 {
+  0% {
+    transform: rotateX(216deg); }
+  50% {
+    transform: rotateX(-720deg); }
+  70% {
+    transform: rotateX(-1080deg); }
+  90% {
+    transform: rotateX(-1404deg); }
+  100% {
+    transform: rotateX(-1440deg); } }
+.number {
+  position: absolute;
+  top: 10vw;
+  right: 0;
+  left: 0;
+  display: flex;
+  height: 20vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+  box-shadow: inset 0 0 2vw rgba(0, 0, 0, 0.8), inset 0 0 0.5vw rgba(0, 0, 0, 0.5);
+  background-color: rgba(204, 193, 163, 0.95);
+  transform-origin: 50% 50%; }
+
+.number:nth-child(0) {
+  transform: rotateX(0deg) translateZ(30vw); }
+
+.number:nth-child(1) {
+  transform: rotateX(36deg) translateZ(30vw); }
+
+.number:nth-child(2) {
+  transform: rotateX(72deg) translateZ(30vw); }
+
+.number:nth-child(3) {
+  transform: rotateX(108deg) translateZ(30vw); }
+
+.number:nth-child(4) {
+  transform: rotateX(144deg) translateZ(30vw); }
+
+.number:nth-child(5) {
+  transform: rotateX(180deg) translateZ(30vw); }
+
+.number:nth-child(6) {
+  transform: rotateX(216deg) translateZ(30vw); }
+
+.number:nth-child(7) {
+  transform: rotateX(252deg) translateZ(30vw); }
+
+.number:nth-child(8) {
+  transform: rotateX(288deg) translateZ(30vw); }
+
+.number:nth-child(9) {
+  transform: rotateX(324deg) translateZ(30vw); }
+
+.number:nth-child(10) {
+  transform: rotateX(360deg) translateZ(30vw); }
+
+body {
+  background-color: #222; }
+
+/*# sourceMappingURL=style.css.map */
